@@ -32,5 +32,7 @@ int main() {
       }
       
     }
-  
+  cout << "The sum of the valid data is: " << sumData << endl;
+  cout << "The number of valid data points is: " << counter << endl;
+  cout << "The average of the valid data is: " << ( static_cast<double>(sumData) / counter) <<  endl;  // makes the sum a double and finds the average
 }
