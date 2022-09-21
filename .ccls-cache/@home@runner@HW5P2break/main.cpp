@@ -8,10 +8,23 @@ int main() {
   ifstream inFile;    //declare stream variabl
   inFile.open("NumberData1.txt");
 
+  //VARIABLES
+  int dataTemp;
+
   // LOAD IN ALL DATA IN WHILE LOOP
-  while (!inFile.eof())
+  while (inFile >> dataTemp)
     {
-      
+
+      if (dataTemp >= 0)
+      {
+        //update vakye of all data and number points loaded
+      }
+      else // value is negative and we need to exit the loop
+      {
+        cout << "Negative value encountered of " << dataTemp << "." << endl;
+        cout << "Will not use the rest of the data ..." << endl;
+        break;
+      }
     }
   
 }
