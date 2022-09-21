@@ -10,14 +10,19 @@ int main() {
 
   //VARIABLES
   int dataTemp;
-
+  int sumData = 0;
+  int counter = 0;
   // LOAD IN ALL DATA IN WHILE LOOP
   while (inFile >> dataTemp)
     {
 
+      
       if (dataTemp >= 0)
       {
         //update vakye of all data and number points loaded
+        //cout << dataTemp << endl;
+        sumData = sumData + dataTemp;
+        counter++;
       }
       else // value is negative and we need to exit the loop
       {
@@ -25,6 +30,7 @@ int main() {
         cout << "Will not use the rest of the data ..." << endl;
         break;
       }
+      
     }
   
 }
